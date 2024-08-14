@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image:url(img/espaco.jpg);
+    background-size: cover;
+    animation: translacao 20,s linear infinite;
+}
+
+.globo {
+    width: 500px;
+    height: 450px;
+    background-color:white;
+    border-radius: 50%;
+    background: url(img/marte.jpg);
+    background-size: cover;
+    box-shadow: -25px -25px 25px black inset, 0px 0px 25px inset white, 0px 0px 12px #ff8f7b;
+    animation: rotacionar 10s linear infinite;
+    display: flex;
+}
+
+@keyframes rotacionar {
+    to {
+        background-position: -200%;
+    }
+}
+
+@keyframes translacao {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: -1000%;
+    }
+}
+
